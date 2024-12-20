@@ -22,8 +22,9 @@ public class Studente {
         return punteggioTot;
     }
     public double addQuiz(int punteggio){
-        double nuovoPunteggio;
-        nuovoPunteggio=getPunteggioTotale()+punteggio;
+        int nuovoPunteggio;
+        nuovoPunteggio=punteggioTot+punteggio;
+        setPunteggioTot(nuovoPunteggio);
         return nuovoPunteggio;
     }
     public double getMediaPunteggi(int numQuestionari){
